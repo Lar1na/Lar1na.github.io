@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_intro.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <h1>Welcome to Croco Planet</h1>
+        <button id="infoBtn" class="btn">Info</button>
+        <button id="playBtn" class="btn" onclick="window.location.href='game.html'">Play</button>
+        <div id="infoBar" class="info-bar">
+            <p>Information about the game...</p>
+            <p> This game was created during the Alt July workshop. Initially, it was designed as a snake game, but after some changes, it has become a crocodile game. The Croco game retains the same core idea as the Snake game: the crocodile eats birds to increase its length. Throughout the game, you can see several features such as the score (displayed in the top left corner), the level (shown in the top right corner), and the record (displayed prominently in the middle after the game ends). To progress through each level, you need to consume 5 birds. Additionally, the speed increases as you advance levels. Author: Larina. Special thanks to ynker Armen for patiently explaining and assisting throughout the entire process.</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('infoBtn').onclick = function() {
+            var infoBar = document.getElementById('infoBar');
+            if (infoBar.style.width === '400px' && infoBar.style.height == "540px") {
+                infoBar.style.width = '0';
+                infoBar.style.height = '0';
+
+            } else {
+                infoBar.style.width = '400px';
+                infoBar.style.height = '540px';
+
+            }
+        }
+    </script>
+</body>
+</html>

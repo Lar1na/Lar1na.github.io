@@ -1,0 +1,61 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif; 
+}
+
+.background {
+  background-image: url("bg.png");
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  background-color: rgba(0,0,0, 0.3); 
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 40%;
+  padding: 60px;
+  text-align: center;
+}
+
+.btn {
+  background-color: #7027A0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.info-bar {
+  height: 500px;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  left: -60%;
+  top: -20%;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: width 0.5s;
+  color: white;
+}
+
+.info-bar p {
+  padding: 8px;
+  text-align: center;
+}

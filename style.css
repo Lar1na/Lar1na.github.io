@@ -1,0 +1,118 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'VT323', monospace;
+  background-image: linear-gradient(#9254C8, #6EDCD9);
+}
+
+body {
+  background-color: #FFAF61;
+}
+
+#game-board {
+  border-radius: 100px;
+  display: grid;
+  grid-template-columns: repeat(18, 35px);
+  grid-template-rows: repeat(18, 35px);
+  margin: 5px;
+}
+
+.game-border-1 {
+  border: #000D6B solid 10px;
+  border-radius: 15px;
+  box-shadow: inset 0 0 0 10px #000D6B;
+}
+
+.game-border-2 {
+  border: #332FD0 solid 8px;
+  border-radius: 26px;
+  box-shadow: inset 0 0 0 10px #332FD0;
+}
+
+.game-border-3 {
+  background-color: white;
+  border: #77E4D4 solid 30px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 5px #77E4D4;
+}
+
+#instruction-text {
+  position: absolute;
+  top: 60%;
+  color: #333;
+  width: 300px;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 30px;
+  margin: 0;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-between;
+}
+
+#score {
+  color: #252525;
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 10px 0;
+}
+
+#highScore {
+  color: #252525;
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 10px 0;
+  display: none;
+}
+
+.croco {
+  background-image: url('crocodile-head.jpg');
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+}
+
+
+#logo {
+  position: absolute;
+}
+.croco-segment {
+  background-color: #252525; 
+  width: 35px;
+  height: 35x;
+}
+
+
+.croco-tail {
+  background-image: url('tail.jpg');
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+}
+.croco-middle {
+  background-image: url('middle.jpg');
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+}
+#level {
+  color: #252525;
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 10px 0;
+}
+
+.food {
+  width: 35px;
+  height: 35px;
+}
+.obstacle {
+  background-color: black;
+  width: 35px;
+  height: 35px;
+}
